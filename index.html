@@ -67,36 +67,7 @@
         <p>&copy;Pedro Pontes Developer</p>
     </footer>
 
-    <script>
-        let semaforo = document.getElementById('semaforo')
-        let click = 0
-
-        setInterval(automatic, 3000)
-
-        function trocarCor(acao) {
-            if (acao == 'red') {
-                semaforo.src = 'img/vermelho.png'
-            } else if (acao == 'yellow') {
-                semaforo.src = 'img/amarelo.png'
-            } else if (acao == 'green') {
-                semaforo.src = 'img/verde.png'
-            }
-        }
-        function automatic() {
-            setTimeout(() => {
-                semaforo.src = 'img/vermelho.png'
-            }, 1000);
-            setTimeout(() => {
-                semaforo.src = 'img/amarelo.png'
-            }, 2000);
-            setInterval(() => {
-                semaforo.src = 'img/verde.png'
-            }, 3000);
-            clearTimeout()
-        }
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
